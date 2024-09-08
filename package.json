@@ -4,16 +4,24 @@
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/poppins": "^0.2.3",
+    "@realm/react": "^0.10.1",
+    "@tanstack/react-query": "^5.55.0",
     "axios": "^1.7.7",
     "expo": "~51.0.28",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-dom": "18.2.0",
+    "react-native": "0.74.5",
+    "react-query": "^3.39.3",
+    "realm": "^12.13.1",
+    "styled-components": "^6.1.13",
+    "expo-dev-client": "~4.0.26"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
