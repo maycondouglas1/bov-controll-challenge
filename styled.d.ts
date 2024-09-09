@@ -6,6 +6,8 @@ declare module "styled-components/native" {
       primary: string;
       secondary: string;
       background: string;
+      white: string;
+      black: string;
     };
     fonts: {
       poppins: {

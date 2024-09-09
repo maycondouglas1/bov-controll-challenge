@@ -1,8 +1,11 @@
 import Realm from "realm";
-import { Checklist } from "./schemas";
+import { schemas } from "./schemas";
 
 export const getRealmInstance = async () => {
-  return await Realm.open({
-    schema: [Checklist],
+  return new Realm({
+    path: "bovcontrol-realm",
+    schema: schemas,
+    schemaVersion: 2,
+    deleteRealmIfMigrationNeeded: true,
   });
 };

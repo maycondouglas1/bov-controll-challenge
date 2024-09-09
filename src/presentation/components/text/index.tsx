@@ -6,9 +6,9 @@ interface AppTextProps extends TextProps {
   color?: keyof DefaultTheme["colors"];
   size?: keyof DefaultTheme["fontSizes"];
   fontType?: keyof DefaultTheme["fonts"]["poppins"];
-  text: string;
+  children: React.ReactNode;
 }
 
-export function AppText({ text, ...props }: AppTextProps) {
-  return <StyledText {...props}>{text}</StyledText>;
+export function AppText({ children, ...props }: AppTextProps) {
+  return <StyledText {...props}>{children}</StyledText>;
 }

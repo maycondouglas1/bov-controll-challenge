@@ -6,23 +6,25 @@ export class AxiosHttpClient implements HttpClient {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: process.env.API_BASE_URL,
+      baseURL: "http://challenge-front-end.bovcontrol.com/v1",
     });
   }
 
-  async request<T>(params: HttpClient.Params): Promise<AxiosResponse<T>> {
+  async request(params: HttpClient.Params): Promise<AxiosResponse<any>> {
     const { url, body, headers, method } = params;
 
     try {
-      const response = await this.axiosInstance.request<T>({
+      const response = await this.axiosInstance.request({
         url,
         data: body,
         headers,
         method,
       });
 
-      return response;
+      return response.data;
     } catch (error) {
+      console.log(error);
+
       throw error;
     }
   }

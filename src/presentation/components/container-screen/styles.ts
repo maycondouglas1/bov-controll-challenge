@@ -3,7 +3,6 @@ import styled from "styled-components/native";
 export const Container = styled.View<{ hasForm?: boolean }>`
   flex: 1;
   background-color: ${({ theme }) => theme.colors.background};
-  padding: ${({ theme }) => theme.spacing.medium};
   padding-top: ${({ theme }) => theme.spacing.large};
 `;
 

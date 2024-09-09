@@ -1,8 +1,10 @@
 export const defaultTheme = {
   colors: {
-    primary: "#000",
-    secondary: "#fff",
+    primary: "#b25be1",
+    secondary: "#7f6af8",
     background: "#f0f0f0",
+    white: "#ffffff",
+    black: "#000000",
   },
   fonts: {
     poppins: {
@@ -14,12 +16,12 @@ export const defaultTheme = {
   },
   fontSizes: {
     small: "12px",
-    medium: "14px",
-    large: "16px",
+    medium: "16px",
+    large: "20px",
   },
   spacing: {
     small: "10px",
-    medium: "16px",
-    large: "24px",
+    medium: "14px",
+    large: "18px",
   },
 };

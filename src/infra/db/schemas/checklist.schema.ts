@@ -26,7 +26,7 @@ export class Checklist extends Realm.Object<Checklist> {
   static schema: Realm.ObjectSchema = {
     name: "Checklist",
     properties: {
-      _id: "int",
+      _id: "string",
       type: "string",
       amount_of_milk_produced: "string",
       farmer: {

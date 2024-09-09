@@ -23,7 +23,9 @@ export function AppHeader({
           <AntDesign name="arrowleft" size={24} color="black" />
         </BackButton>
       )}
-      <AppText text={title} size="large" fontType="bold" />
+      <AppText size="large" fontType="bold" color="white">
+        {title}
+      </AppText>
     </Container>
   );
 }

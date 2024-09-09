@@ -10,7 +10,9 @@
       "@presentation/*": ["src/presentation/*"],
       "@main/*": ["src/main/*"],
       "@database/*": ["src/database/*"],
-      "@validation/*": ["src/validation/*"]
+      "@validation/*": ["src/validation/*"],
+      "@assets/*": ["assets/*"],
+      "@utils/*": ["src/utils/*"]
     }
   }
 }

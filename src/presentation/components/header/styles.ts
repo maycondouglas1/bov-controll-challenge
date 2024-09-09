@@ -3,7 +3,11 @@ import styled from "styled-components/native";
 export const Container = styled.View<{ align: "center" | "left" }>`
   flex-direction: row;
   align-items: center;
-  align-self: ${({ align }) => (align === "left" ? "flex-start" : "center")};
+  background-color: ${({ theme }) => theme.colors.primary};
+  justify-content: ${({ align }) =>
+    align === "left" ? "flex-start" : "center"};
+  padding: ${({ theme }) => theme.spacing.medium};
+  width: 100%;
 `;
 
 export const BackButton = styled.TouchableOpacity`
