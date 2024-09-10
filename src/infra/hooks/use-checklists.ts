@@ -22,7 +22,10 @@ const fetchChecklists = async (
       number_of_cows_head: Number(checklist.number_of_cows_head),
     }));
 
-    await SyncChecklists.sync(updatedChecklists);
+    if (updatedChecklists.length > 0) {
+      await SyncChecklists.sync(updatedChecklists);
+    }
+
     return updatedChecklists;
   } catch (error) {
     const localChecklists = await GetChecklists.getAll();

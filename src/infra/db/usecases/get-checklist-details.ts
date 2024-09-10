@@ -7,7 +7,7 @@ export class GetChecklistDetails {
     const realmInstance = await getRealmInstance();
     const result = realmInstance.objectForPrimaryKey(
       ChecklistSchema,
-      checklistId
+      Number(checklistId)
     );
     return result ? (result as Checklist) : null;
   }
