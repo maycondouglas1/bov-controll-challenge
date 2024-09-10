@@ -1,7 +1,7 @@
 export type Checklist = {
-  _id: number;
+  _id: string;
   type: string;
-  amount_of_milk_produced: string;
+  amount_of_milk_produced: number;
   farmer: {
     name: string;
     city: string;
@@ -12,7 +12,7 @@ export type Checklist = {
   to: {
     name: string;
   };
-  number_of_cows_head: string;
+  number_of_cows_head: number;
   had_supervision: boolean;
   location: {
     latitude: number;

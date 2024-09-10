@@ -1,9 +1,9 @@
 import Realm from "realm";
 
 export class Checklist extends Realm.Object<Checklist> {
-  _id!: number;
+  _id!: string;
   type!: string;
-  amount_of_milk_produced!: string;
+  amount_of_milk_produced!: number;
   farmer!: {
     name: string;
     city: string;
@@ -14,7 +14,7 @@ export class Checklist extends Realm.Object<Checklist> {
   to!: {
     name: string;
   };
-  number_of_cows_head!: string;
+  number_of_cows_head!: number;
   had_supervision!: boolean;
   location!: {
     latitude: number;
@@ -28,7 +28,7 @@ export class Checklist extends Realm.Object<Checklist> {
     properties: {
       _id: "string",
       type: "string",
-      amount_of_milk_produced: "string",
+      amount_of_milk_produced: "int",
       farmer: {
         type: "object",
         objectType: "Farmer",
@@ -41,7 +41,7 @@ export class Checklist extends Realm.Object<Checklist> {
         type: "object",
         objectType: "Supervisor",
       },
-      number_of_cows_head: "string",
+      number_of_cows_head: "int",
       had_supervision: "bool",
       location: {
         type: "object",

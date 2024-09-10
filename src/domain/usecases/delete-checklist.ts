@@ -4,6 +4,6 @@ export interface DeleteChecklist {
 
 export namespace DeleteChecklist {
   export type Params = {
-    id: number;
+    _id: string;
   };
 }

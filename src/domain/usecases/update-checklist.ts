@@ -7,7 +7,6 @@ export interface UpdateChecklist {
 
 export namespace UpdateChecklist {
   export type Params = {
-    id: number;
     data: CreateChecklist.Params;
   };
 }

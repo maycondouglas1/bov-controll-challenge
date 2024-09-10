@@ -6,7 +6,7 @@ export class AxiosHttpClient implements HttpClient {
 
   constructor() {
     this.axiosInstance = axios.create({
-      baseURL: "http://challenge-front-end.bovcontrol.com/v1",
+      baseURL: process.env.EXPO_PUBLIC_API_BASE_URL,
     });
   }
 
@@ -23,8 +23,6 @@ export class AxiosHttpClient implements HttpClient {
 
       return response.data;
     } catch (error) {
-      console.log(error);
-
       throw error;
     }
   }

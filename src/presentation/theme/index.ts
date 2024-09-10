@@ -1,10 +1,11 @@
 export const defaultTheme = {
   colors: {
-    primary: "#b25be1",
+    primary: "#6C63FF",
     secondary: "#7f6af8",
     background: "#f0f0f0",
     white: "#ffffff",
     black: "#000000",
+    red: "#ff0000",
   },
   fonts: {
     poppins: {

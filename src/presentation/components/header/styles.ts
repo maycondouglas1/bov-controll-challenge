@@ -6,7 +6,8 @@ export const Container = styled.View<{ align: "center" | "left" }>`
   background-color: ${({ theme }) => theme.colors.primary};
   justify-content: ${({ align }) =>
     align === "left" ? "flex-start" : "center"};
-  padding: ${({ theme }) => theme.spacing.medium};
+  padding-top: ${({ theme }) => theme.spacing.small};
+  padding-bottom: ${({ theme }) => theme.spacing.small};
   width: 100%;
 `;
 
