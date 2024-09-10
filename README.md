@@ -7,8 +7,8 @@ The code didn't turn out as nicely as I wanted due to the time, but it's worth d
 
 # How to run the project
 
-    git clone
-    cd 
+    git clone git@github.com:maycondouglas1/bov-controll-challenge.git
+    cd bov-controll-challenge
     npm install 
     npx expo run:android
 	
