@@ -3,6 +3,7 @@ import { Checklist } from "@/domain/entities/checklist.entity";
 import { GetChecklistDetails } from "@/domain/usecases/get-checklist-details";
 import { GetChecklistDetails as GetChecklistDetailsOffline } from "@/infra/db/usecases/get-checklist-details";
 import NetInfo from "@react-native-community/netinfo";
+
 export class RemoteGetChecklistDetails implements GetChecklistDetails {
   constructor(
     private readonly url: string,
